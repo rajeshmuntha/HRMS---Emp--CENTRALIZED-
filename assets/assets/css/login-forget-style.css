@@ -1,0 +1,286 @@
+*{
+  font-family: 'poppins', sans-serif;
+  /* font-size: 32px; */
+}
+.bg{
+  background-image:url('./../imgs/bg.png');
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+#usrname {
+    border-bottom: 1px solid #189cdf !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    background: transparent;
+}
+#psw {
+  border-bottom: 1px solid #189cdf !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  background: transparent;
+}
+#pass {
+  border-bottom: 1px solid #189cdf !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  background: transparent;
+}
+#confirm_pass {
+  border-bottom: 1px solid #189cdf !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  background: transparent;
+}
+
+/* .msign{
+  background-color: #189cdf;
+} */
+
+textarea:hover, 
+input[type=text],input[type=email],[type=password]:hover, 
+textarea:active, 
+input[type=text],input[type=email],[type=password]:active, 
+textarea:focus, 
+input[type=text],input[type=email],[type=password]:focus
+{
+    outline: 0px !important;
+    
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 0;
+}
+
+#message p {
+  padding: 0px 35px;
+  margin: 0 0;
+  font-size: 12px;
+}
+
+#message2 {
+  display:none;
+  background: #f1f1f1;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 0;
+}
+
+#message2 p {
+  padding: 0px 35px;
+  margin: 0 0;
+  font-size: 12px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], .drop-down {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc !important;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1920px){
+  .container{
+    padding-top: 300px !important;
+  }
+  /* .hrmslogo{
+    padding-top: 50px;
+  } */
+}
+@media screen and (max-width: 1468px){
+  .msign{
+    padding-top: 0px;
+  }
+  .hrmslogo{
+    padding-top: 50px;
+  }
+}  
+@media screen and (max-width: 1208px){
+  .msign{
+    padding-top: 0px;
+  }
+  .hrmslogo{
+    padding-top: 50px;
+  }
+} 
+@media screen and (max-width: 1000px){
+  .hrmslogo{
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 768px){
+  .hrmslogo{
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .container{
+    padding: 50px 0 0 100px;
+  }
+  .hrmslogo{
+    width: 150px;
+    height: auto;
+    /* align-content:space-around; */
+    margin-left: 100px;
+    padding-top: 0px;
+  }
+  .msign{
+    padding-top: 0px;
+  }
+}
+
+
+@media screen and (max-width: 1468px){
+  .msign{
+    padding-top: 0px;
+  }
+  .FHrmsLogo{
+    padding-top: 50px;
+  }
+}  
+@media screen and (max-width: 1208px){
+  .msign{
+    padding-top: 0px;
+  }
+  .FHrmsLogo{
+    padding-top: 50px;
+  }
+} 
+@media screen and (max-width: 1000px){
+  .FHrmsLogo{
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 768px){
+  .FHrmsLogo{
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .container{
+    padding: 50px 0 0 100px;
+  }
+  .FHrmsLogo{
+    width: 150px;
+    height: auto;
+    /* align-content:space-around; */
+    margin-left: 100px;
+    padding-top: 0px;
+  }
+  .msign{
+    padding-top: 0px;
+  }
+}
+
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+
+
+  .heading{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    color: #282562;
+  }
+  .card{
+    /* margin-top: 70px;
+    margin-bottom: 70px; */
+    /* width: 450px; */
+    height: 600px;
+    box-shadow: 0.15s ease-in-out;
+      perspective: 10000px;
+    border-radius: 0px;
+    background-color: black;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent !important;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125) !important;
+    border-radius: .5rem;
+  }
+  .inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+      transition: transform 1s;
+  }
+  .card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e2e2e2;
+    /* background-image: linear-gradient(-45deg, #e4e4e4 0%, #6C6E6F 100%); */
+    padding: 20px 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    border-radius: 12px;
+  }
+  .card-back{
+    transform: rotateY(180deg);
+  }
+
+ 
+  
+  
+    
+
