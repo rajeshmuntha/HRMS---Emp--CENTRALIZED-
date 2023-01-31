@@ -264,7 +264,13 @@
                             <li class="active">
                                 <a href="#Pages" class="has-arrow"><i class="bi bi-person"></i><span>Admin</span></a>
                                 <ul>
-                                    <li class=""><a href="e4-doctors-attendance-monitoring.html">Doctor's Attendance Monitoring</a></li>
+                                    <li class="">
+                                        <a href="#Pages" class="has-arrow">Doctor's Attendance Monitoring</a>
+                                        <ul>
+                                            <li class=""><a style="padding-left: 78px;" href="e4-doc-week-attendance-monitoring.html">Week Wise</a></li>
+                                            <li class=""><a style="padding-left: 78px;" href="e4-doc-month-attendance-monitoring.html">Month Wise</a></li>
+                                        </ul>
+                                    </li>
                                     <li style="text-decoration: none;" class="">
                                         <a href="#Pages" class="has-arrow">Staff Attendance Monitoring</a>
                                         <ul>
@@ -275,12 +281,12 @@
                                     <li class="active"><a href="e4-attendance-update.html">Attendance Update</a></li>
                                     <li class=""><a href="e4-leaves-approve.html">Leave's to Approve</a></li>
                                     <li class=""><a href="e4-approve-expenses.html">Expenses to Approve</a></li>
-                                    <li class=""><a href="e4-add-events.html">Add Events</a></li>
                                     <li class=""><a href="e4-add-emp.html">Add Employee</a></li>
                                     <li class=""><a href="e4-upgrade-emp.html">Upgrade Employee</a></li> 
                                     <li class=""><a href="e4-emp-config.html">Employee Configuration</a></li>
                                     <li class=""><a href="e4-add-branch.html">Add Branch</a></li>
                                     <li class=""><a href="e4-branch-config.html">Branch Configuration</a></li>
+                                    <li class=""><a href="e4-add-events.html">Add Events</a></li>
                                     <li class=""><a href="e4-add-holidaysList.html">Add Holidays List</a></li>
                                 </ul>
                             </li>
@@ -365,7 +371,7 @@
             <div class="card p-1">
                 <div class="body">
                     <div style="border-radius: 20px;" class="row py-4">  
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <form id="navbar-search" class="search-form">
                                 <input value="" class="form-control" placeholder="Search by emp id..." type="text">
                                 <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
@@ -386,15 +392,23 @@
                                 <tr>
                                     <th>Mobile No:</th>
                                     <td>+91 9123 45 6789</td>
-                                    <th>Punch-In Date/Time</th>
-                                    <td>02-06-2023/08:00</td>
+                                    <th style="vertical-align: middle;">Email ID</th>
+                                    <td>testing@spcare.com</td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="d-none d-sm-none d-md-block col-lg-1 col-md-1">
+                        <!-- <div class="d-none d-sm-none d-md-block col-lg-1 col-md-1">
                             <div style="background-color: #189cdf; height: 170px; width: 3px;" class=""></div>
+                        </div> -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <label for="">Configure <span class="text-primary">Punch-In Time:-</span> </label>
+                            <input type="date" date-format="dd-mm-yyyy" class="form-control" id="txtName">
+                            <input type="button" class="btn btn-primary btn-sm btn-block mt-2" id="btnCopy" value="Click to Print Date & Time" onclick = "CopyToLabel()" />
+                            <hr>
+                            <h6 class="mt-0">Punch-In Date/Time: -</h6>
+                            <div class="text-primary" style="font-weight: 500;"><span id = "lblName"></span>/00:00</div>
                         </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                             <label for="">Configure <span class="text-primary">Punch-Out Time:-</span> </label>
                             <input type="datetime-local" class="form-control" name="" id="">
                             <div class=" pt-3">
@@ -468,6 +482,18 @@ document.getElementById('timing_confirm-2').addEventListener('change', function 
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 }
+
+// PunchIn Date print from Picker -starts
+function CopyToLabel() {
+        //Reference the TextBox.
+        var txtName = document.getElementById("txtName"); 
+        //Reference the Label.
+        var lblName = document.getElementById("lblName"); 
+        //Copy the TextBox value to Label.
+        lblName.innerHTML = txtName.value;
+    }
+// PunchIn Date print from Picker -ends
+
 
 // session time expired
 setTimeout(fade_out, 2000);
