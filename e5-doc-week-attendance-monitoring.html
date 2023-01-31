@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>SPTECHHUB | Staff Attendance Monitoring</title>
+<title>SPTECHHUB | Doctors Week Attendance Monitoring</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,  shrink-to-fit=no">
@@ -66,7 +66,7 @@
 <!-- <div class="page-loader-wrapper">
     <div class="loader">
         <div class="m-t-30"><img src="./assets/images/logo-icon.png" width="48" height="30" alt="SPTECHHUB"></div>
-        <p>Please wait...</p>        
+        <p>Please wait..</p>        
     </div>
 </div> -->
 <!-- Overlay For Sidebars -->
@@ -85,7 +85,7 @@
             
             <div class="navbar-right">
                 <form id="navbar-search" class="navbar-form search-form">
-                    <input value="" class="form-control" placeholder="Search here..." type="text">
+                    <input value="" class="form-control" placeholder="Search here.." type="text">
                     <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
                 </form>                
 
@@ -212,17 +212,17 @@
                             <li class="active">
                                 <a href="#Pages" class="has-arrow"><i class="bi bi-person"></i><span>Super Admin</span></a>
                                 <ul>
-                                    <li class="">
+                                    <li class="active">
                                         <a href="#Pages" class="has-arrow">Doctor's Attendance Monitoring</a>
                                         <ul>
-                                            <li class=""><a style="padding-left: 78px;" href="e5-doc-week-attendance-monitoring.html">Week Wise</a></li>
+                                            <li class="active"><a style="padding-left: 78px;" href="e5-doc-week-attendance-monitoring.html">Week Wise</a></li>
                                             <li class=""><a style="padding-left: 78px;" href="e5-doc-month-attendance-monitoring.html">Month Wise</a></li>
                                         </ul>
                                     </li>
-                                    <li style="text-decoration: none;" class="active">
+                                    <li style="text-decoration: none;" class="">
                                         <a href="#Pages" class="has-arrow">Staff Attendance Monitoring</a>
                                         <ul>
-                                            <li class="active"><a style="padding-left: 78px;" href="e5-staff-week-attendance-monitoring.html">Week Wise</a></li>
+                                            <li class=""><a style="padding-left: 78px;" href="e5-staff-week-attendance-monitoring.html">Week Wise</a></li>
                                             <li class=""><a style="padding-left: 78px;" href="e5-staff-month-attendance-monitoring.html">Month Wise</a></li>
                                         </ul>
                                     </li>
@@ -238,7 +238,7 @@
                                     <li class=""><a href="e5-add-events.html">Add Events</a></li>
                                     <li class=""><a href="e5-add-holidaysList.html">Add Holidays List</a></li>
                                 </ul>
-                            </li>
+                            </li> 
                             <li class="">
                                 <a href="#Pages" class="has-arrow"><i class="bi bi-person-lines-fill"></i><span>Careers</span></a>
                                 <ul>
@@ -246,7 +246,7 @@
                                     <li class=""><a href="e5-add-career-indetail.html">Post in Detail</a></li>
                                     <li class=""><a href="e5-view-applicants.html">View Applicants</a></li>
                                 </ul>
-                            </li>    
+                            </li>   
                             <li class="">
                                 <a href="#Pages" class="has-arrow"><i class="bi bi-ui-checks"></i><span>Roster Form</span></a>
                                 <ul>
@@ -305,11 +305,11 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-6 col-md-8 col-sm-12">
-                        <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a>Staff Attendance Monitoring</h2>
+                        <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a>Doctors Week Attendance Monitoring</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="e5-emp-attendance2.html"><i class="icon-home"></i></a></li>                            
                             <li class="breadcrumb-item text-danger" style="font-weight: 600;">Super Admin</li>
-                            <li class="breadcrumb-item active">Staff Attendance Monitoring</li>
+                            <li class="breadcrumb-item active">Doctors Attendance Monitoring</li>
                             <li class="breadcrumb-item active">Week Wise Monitoring</li>
                         </ul>
                     </div>            
@@ -319,12 +319,12 @@
                 </div>
             </div>
             <div class="card p-4">
-                <div class="header pb-3">
+                <div class="header pb-2">
                     <div class="row">
                         <div class="col-lg-3">
                             <select style="width: 150px;" class="form-control form-control-sm text-primary">
                                 <option>Choose Branch</option>
-                                <option>Rawang Tin</option>
+                                <option selected>Rawang Tin</option>
                                 <option>Rawang Mutiara</option>
                                 <option>Antar Gapi</option>
                             </select>
@@ -338,291 +338,168 @@
                         </div>
                     </div>
                 </div>
-                <div class="table-responsive">
-                    <table id="faqs" class="table table-sm table-hover">
-                        <thead class="bg-primary text-white">
+                <div class="table-responsive pt-2">
+                    <table id="faqs" class="table table-sm table-bordered">
+                        <!-- <thead class="bg-primary text-white">
                             <tr>
-                                <th>Emp ID</th>
-                                <th colspan="17">Emp Name</th>
+                                <th>Emp ID <br> Emp Name</th>
+                                <th colspan="45"></th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody>
                             <tr>
-                                <td rowspan="4" class="border">
-                                    P02266
-                                </td>
-                                <td rowspan="4" class="border">
-                                    Rajesh Muntha
+                                <td rowspan="15" class="alert alert-success border">
+                                    P02266 <br> Dr. Dravid
                                 </td>
                                 <tr>
-                                    <th>Week</th>
-                                    <td colspan="2" class="bg-primary text-white border text-center">Monday</td>
-                                    <td colspan="2" class="bg-success text-white border text-center">Tuesday</td>
-                                    <td colspan="2" class="bg-danger text-white border text-center">Wednesday</td>
-                                    <td colspan="2" class="bg-info text-white border text-center">Thursaday</td>
-                                    <td colspan="2" class="bg-warning text-white border text-center">Friday</td>
-                                    <td colspan="2" class="bg-dark text-white border text-center">Saturday</td>
-                                    <td colspan="2" class="bg-secondary text-white border text-center">Sunday</td>
+                                    <td colspan="3" class="bg-primary text-white border text-center">Monday</td>
+                                    <td colspan="3" class="bg-success text-white border text-center">Tuesday</td>
+                                    <td colspan="3" class="bg-danger text-white border text-center">Wednesday</td>
+                                    <td colspan="3" class="bg-info text-white border text-center">Thursaday</td>
+                                    <td colspan="3" class="bg-warning text-white border text-center">Friday</td>
+                                    <td colspan="3" class="bg-dark text-white border text-center">Saturday</td>
+                                    <td colspan="3" class="bg-secondary text-white border text-center">Sunday</td>
                                 </tr>
-                                <!-- <tr>
-                                    <td>Shift Count | Shift Round</td>
-                                    <td class="border">1</td>
-                                    <td class="border">Morning</td>
-                                    <td class="border">2</td>
-                                    <td class="border">Afternoon</td>
-                                    <td class="border">3</td>
-                                    <td class="border">Evening</td>
-                                    <td class="border">1</td>
-                                    <td class="border">Morning</td>
-                                    <td class="border">2</td>
-                                    <td class="border">Afternoon</td>
-                                    <td class="border">3</td>
-                                    <td class="border">Evening</td>
-                                    <td class="border">1</td>
-                                    <td class="border">Morning</td>
+                                <tr>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                    <td><b>Location</b></td>
+                                    <td><b><span class="text-danger">Login</span></b></td>
+                                    <td><b><span class="text-danger">Logout</span></b></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                    <td rowspan="2"></td>
+                                    <td>00:00</td>
+                                    <td>00:00</td>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                    <td rowspan="2">RT</td>
+                                    <td>06:00</td>
+                                    <td>12:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                    <td class="text-danger">06:05</td>
+                                    <td class="text-danger">12:10</td>
+                                <!-- </tr>
+                                <tr>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                    <td rowspan="2"></td>
+                                    <td>00:00</td>
+                                    <td>00:00</td>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                    <td rowspan="2">RM</td>
+                                    <td>13:00</td>
+                                    <td>16:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                    <td class="text-danger">13:00</td>
+                                    <td class="text-danger">16:05</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                    <td rowspan="2"></td>
+                                    <td>00:00</td>
+                                    <td>00:00</td>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                    <td rowspan="2">AG</td>
+                                    <td>17:00</td>
+                                    <td>20:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">00:00</td>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
+                                    <td class="text-danger">17:05</td>
+                                    <td class="text-danger">20:00</td>
                                 </tr> -->
-                                <tr>
-                                    <td class="text-success">Scheduled Time</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                </tr>
-                                <tr>
-                                    <td class="">Login | Logout</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:10</td>
-                                    <td class="border text-danger">00:03</td>
-                                    <td class="border text-danger">14:04</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:15</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:01</td>
-                                    <td class="border text-danger">00:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                </tr>
-                            </tr> 
-                            <tr>
-                                <td rowspan="4" class="border">
-                                    P02267
-                                </td>
-                                <td rowspan="4" class="border">
-                                    Devi Mounika
-                                </td>
-                                <tr>
-                                    <th>Week</th>
-                                    <td colspan="2" class="bg-primary text-white border text-center">Monday</td>
-                                    <td colspan="2" class="bg-success text-white border text-center">Tuesday</td>
-                                    <td colspan="2" class="bg-danger text-white border text-center">Wednesday</td>
-                                    <td colspan="2" class="bg-info text-white border text-center">Thursaday</td>
-                                    <td colspan="2" class="bg-warning text-white border text-center">Friday</td>
-                                    <td colspan="2" class="bg-dark text-white border text-center">Saturday</td>
-                                    <td colspan="2" class="bg-secondary text-white border text-center">Sunday</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-success">Scheduled Time</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Login | Logout</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:10</td>
-                                    <td class="border text-danger">00:03</td>
-                                    <td class="border text-danger">14:04</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:15</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:01</td>
-                                    <td class="border text-danger">00:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                </tr>
-                            </tr> 
-                            <tr>
-                                <td rowspan="4" class="border">
-                                    P02268
-                                </td>
-                                <td rowspan="4" class="border">
-                                    Somesh Kumar
-                                </td>
-                                <tr>
-                                    <th>Week</th>
-                                    <td colspan="2" class="bg-primary text-white border text-center">Monday</td>
-                                    <td colspan="2" class="bg-success text-white border text-center">Tuesday</td>
-                                    <td colspan="2" class="bg-danger text-white border text-center">Wednesday</td>
-                                    <td colspan="2" class="bg-info text-white border text-center">Thursaday</td>
-                                    <td colspan="2" class="bg-warning text-white border text-center">Friday</td>
-                                    <td colspan="2" class="bg-dark text-white border text-center">Saturday</td>
-                                    <td colspan="2" class="bg-secondary text-white border text-center">Sunday</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-success">Scheduled Time</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Login | Logout</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:10</td>
-                                    <td class="border text-danger">00:03</td>
-                                    <td class="border text-danger">14:04</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:15</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:01</td>
-                                    <td class="border text-danger">00:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                </tr>
-                            </tr>
-                            <tr>
-                                <td rowspan="4" class="border">
-                                    P02269
-                                </td>
-                                <td rowspan="4" class="border">
-                                    Slice Mango
-                                </td>
-                                <tr>
-                                    <th>Week</th>
-                                    <td colspan="2" class="bg-primary text-white border text-center">Monday</td>
-                                    <td colspan="2" class="bg-success text-white border text-center">Tuesday</td>
-                                    <td colspan="2" class="bg-danger text-white border text-center">Wednesday</td>
-                                    <td colspan="2" class="bg-info text-white border text-center">Thursaday</td>
-                                    <td colspan="2" class="bg-warning text-white border text-center">Friday</td>
-                                    <td colspan="2" class="bg-dark text-white border text-center">Saturday</td>
-                                    <td colspan="2" class="bg-secondary text-white border text-center">Sunday</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-success">Scheduled Time</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Login | Logout</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:10</td>
-                                    <td class="border text-danger">00:03</td>
-                                    <td class="border text-danger">14:04</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:15</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:01</td>
-                                    <td class="border text-danger">00:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                </tr>
-                            </tr>
-                            <tr>
-                                <td rowspan="4" class="border">
-                                    P02269
-                                </td>
-                                <td rowspan="4" class="border">
-                                    Fanta Sprite
-                                </td>
-                                <tr>
-                                    <th>Week</th>
-                                    <td colspan="2" class="bg-primary text-white border text-center">Monday</td>
-                                    <td colspan="2" class="bg-success text-white border text-center">Tuesday</td>
-                                    <td colspan="2" class="bg-danger text-white border text-center">Wednesday</td>
-                                    <td colspan="2" class="bg-info text-white border text-center">Thursaday</td>
-                                    <td colspan="2" class="bg-warning text-white border text-center">Friday</td>
-                                    <td colspan="2" class="bg-dark text-white border text-center">Saturday</td>
-                                    <td colspan="2" class="bg-secondary text-white border text-center">Sunday</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-success">Scheduled Time</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">12:00</td>
-                                    <td class="border">00:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">14:00</td>
-                                    <td class="border">06:00</td>
-                                    <td class="border">12:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Login | Logout</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:10</td>
-                                    <td class="border text-danger">00:03</td>
-                                    <td class="border text-danger">14:04</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:15</td>
-                                    <td class="border text-danger">12:00</td>
-                                    <td class="border text-danger">12:01</td>
-                                    <td class="border text-danger">00:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">14:00</td>
-                                    <td class="border text-danger">06:05</td>
-                                    <td class="border text-danger">12:00</td>
-                                </tr>
                             </tr>  
                         </tbody>                        
                     </table>
@@ -647,7 +524,6 @@ setTimeout(fade_out, 2000);
 	function fade_out() {
 		$("#div").fadeOut().empty();
 	}
-
 </script>
 
 
@@ -655,7 +531,7 @@ setTimeout(fade_out, 2000);
 <script src="./assets/assets/bundles/libscripts.bundle.js"></script>    
 <script src="./assets/assets/bundles/vendorscripts.bundle.js"></script>
 <script src="./assets/assets/bundles/datatablescripts.bundle.js"></script>
-<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script><
+<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="./assets/assets/bundles/mainscripts.bundle.js"></script>
 <script src="./assets/assets/js/pages/tables/jquery-datatable.js"></script>
 <script src="./assets/assets/js/pages/ui/dialogs.js"></script>
