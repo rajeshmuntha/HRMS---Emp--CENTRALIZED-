@@ -121,38 +121,11 @@ input[type=text], input[type=password], input[type=email], .drop-down {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1920px){
-  .container{
-    padding-top: 300px !important;
-  }
-  /* .hrmslogo{
-    padding-top: 50px;
-  } */
-}
-@media screen and (max-width: 1468px){
-  .msign{
-    padding-top: 0px;
-  }
+/* Media quries for Login and Signup started */
+@media screen and (min-width: 375px){
   .hrmslogo{
-    padding-top: 50px;
-  }
-}  
-@media screen and (max-width: 1208px){
-  .msign{
-    padding-top: 0px;
-  }
-  .hrmslogo{
-    padding-top: 50px;
-  }
-} 
-@media screen and (max-width: 1000px){
-  .hrmslogo{
-    padding-top: 120px;
-  }
-}
-@media screen and (max-width: 768px){
-  .hrmslogo{
-    padding-top: 200px;
+    margin-top: 20px !important;
+
   }
 }
 @media screen and (max-width: 580px) {
@@ -162,57 +135,42 @@ input[type=text], input[type=password], input[type=email], .drop-down {
   .hrmslogo{
     width: 150px;
     height: auto;
-    /* align-content:space-around; */
-    margin-left: 100px;
+    margin-left: 115px;
     padding-top: 0px;
   }
   .msign{
     padding-top: 0px;
   }
 }
+@media screen and (max-width: 810px){
+  .hrmslogo{
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1366px){
+  .tpad{
+    margin-top: 20px !important;
+  }
+  .hrmslogo{
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1500px){
+  .tpad{
+    margin-top: 70px !important;
+  }
+}
+@media screen and (min-width: 1800px){
+  .tpad{
+    margin-top: 160px !important;
+  }  
+  .hrmslogo{
+    padding-top: 50px !important;
+  }
+}
+/* Media quries for Login and Signup ended */
 
 
-@media screen and (max-width: 1468px){
-  .msign{
-    padding-top: 0px;
-  }
-  .FHrmsLogo{
-    padding-top: 50px;
-  }
-}  
-@media screen and (max-width: 1208px){
-  .msign{
-    padding-top: 0px;
-  }
-  .FHrmsLogo{
-    padding-top: 50px;
-  }
-} 
-@media screen and (max-width: 1000px){
-  .FHrmsLogo{
-    padding-top: 120px;
-  }
-}
-@media screen and (max-width: 768px){
-  .FHrmsLogo{
-    padding-top: 200px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .container{
-    padding: 50px 0 0 100px;
-  }
-  .FHrmsLogo{
-    width: 150px;
-    height: auto;
-    /* align-content:space-around; */
-    margin-left: 100px;
-    padding-top: 0px;
-  }
-  .msign{
-    padding-top: 0px;
-  }
-}
 
 
   /* Add Zoom Animation */
